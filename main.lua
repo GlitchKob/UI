@@ -130,7 +130,6 @@ Language=string.match(g.SystemLocaleId,"^[a-z]+"),
 Request=http_request or(syn and syn.request)or request,
 DefaultProperties={
 ScreenGui={
-ResetOnSpawn=true,
 ZIndexBehavior="Sibling",
 },
 CanvasGroup={

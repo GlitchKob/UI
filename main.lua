@@ -130,6 +130,7 @@ Language=string.match(g.SystemLocaleId,"^[a-z]+"),
 Request=http_request or(syn and syn.request)or request,
 DefaultProperties={
 ScreenGui={
+ResetOnSpawn=false,
 ZIndexBehavior="Sibling",
 },
 CanvasGroup={
@@ -12373,8 +12374,7 @@ aa.cloneref=ae
 
 local af=ae(game:GetService"HttpService")
 local ah=ae(game:GetService"Players")
-local aj=ae(gethui())
-local ak= 
+local aj=ae((gethui and gethui()) or game:GetService("CoreGui"))local ak= 
 
 ah.LocalPlayer or nil
 
